@@ -42,7 +42,7 @@ namespace LoginApp
             {
 
                 MailMessage msg = new MailMessage();
-                msg.From = new MailAddress("houssemfarid57@gmail.com");
+                msg.From = new MailAddress("your Email here");
                 msg.To.Add(textBoxTo.Text);
                 msg.Subject = textBoxSubject.Text;
                 msg.Body = textBoxBody.Text;
@@ -51,7 +51,7 @@ namespace LoginApp
                 smt.Host = "smtp.gmail.com";
                 System.Net.NetworkCredential ntcd = new NetworkCredential();
                 ntcd.UserName = "houssemfarid57@gmail.com";
-                ntcd.Password = "advpkjuvehomejjz";
+                ntcd.Password = "your generated Password here";
                 smt.Credentials = ntcd;
                 smt.EnableSsl = true;
                 smt.Port = 587;
